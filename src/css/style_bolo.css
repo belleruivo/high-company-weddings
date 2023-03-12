@@ -1,0 +1,430 @@
+@font-face{
+	font-family: BebasNeue;
+	src: url(../fonts/BebasNeue-Regular.ttf);
+}
+
+@font-face{
+	font-family: Barlom;
+	src: url(../fonts/Barlow-Medium.ttf);
+}
+
+@font-face{
+	font-family: Jost;
+	src: url(../fonts/Jost-VariableFont_wght.ttf);
+}
+
+@font-face{
+	font-family: Orkney;
+	src: url(../fonts/Orkney-Regular.ttf);
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	background-color: #fbfefb;
+	width: 100%;
+	height: 100%;
+	margin-top: 10%;
+}
+
+#fixed_header{
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 10;
+	width: 100%;
+}
+
+.main{
+	padding: 0 80px;
+	text-align: justify;
+	font-weight: bold;	
+	font-size: 18px;
+	color: rgb(104, 104, 104);
+	position: relative;
+  	min-height: 100vh;
+}
+
+h1{
+	text-align: center;
+	font-family: footer;
+    margin: 2%;
+    color: rgba(245,136,121,255);
+    text-shadow: 2px 0px 10px #ff7a60;
+    font-size: 221%;
+}
+
+h2{
+	text-align: left;
+	font-family: footer;
+    margin: 2%;
+    color: rgba(245,136,121,255);
+    text-shadow: 5px 0px 10px #ff7a60;
+    font-size: 180%;
+}
+
+figure{
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+#figure2{
+	display: inline-flex;
+}
+
+table{
+	text-align: justify;
+	justify-content: center;
+	padding: 30px;
+}
+
+img, table{
+	margin-right: 20px;
+	display: inline-block;
+}
+
+li {
+	color: #ff7a60;
+}
+
+li span {
+	color: rgb(104, 104, 104);
+}
+
+#listacentro{
+	text-align: center;
+	justify-content: center;
+}
+
+.sem_efeito{
+	text-align: center;
+	color: rgb(104, 104, 104);
+	position: relative;
+    margin: 2%;
+    font-size: 150%;
+	text-shadow: 5px 0px 10px #ffffff;
+}
+
+.menu{
+	height: 20%;
+}
+
+header{
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: 10;
+}
+
+.menu ul{
+	text-align: right;
+	list-style: none;
+	padding: 0;
+	background-color: rgba(233, 233, 233, 0.974);
+	width: 100%;
+}
+
+.menu ul li{
+	display: inline;
+    margin-right: 60px;
+}
+
+a{
+	text-align: center;
+}
+
+.menu ul li a{
+	color: rgb(104, 104, 104);
+	text-decoration: none;
+	padding: 30px 5px;
+	display: inline-block;
+	transition:  0.5s ease-in-out;
+	font-family: "BebasNeue";
+	margin: 0;
+	box-sizing: border-box;
+	font-size: 20px;
+	position: relative;
+	width: 95px;
+}
+
+.menu ul li a::after{
+	content: " ";
+	width: 0%;
+	height: 3px;
+	background-color: #ff7a60;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	transition: 0.5s ease-in-out;
+}
+
+.menu ul li a:hover::after{
+	width: 100%;
+}
+
+.menu ul li a:hover{
+	transition: 0.3s;
+	color: rgb(104, 104, 104);
+	font-weight: bold;
+}
+
+.redesociais ul{
+	text-align: left;
+	list-style: none;
+	padding: 0;
+	background-color: rgba(245,136,121,255);
+}
+
+.redesociais ul li{
+	display: inline;
+    margin-left: 30px;
+}
+
+.redesociais ul li a{
+	color: rgb(255, 255, 255);
+	text-decoration: none;
+	padding: 15px 5px;
+	display: inline-flex;
+	font-family: Arial;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+.redesociais a:hover{
+    border-radius: 40px;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(99,67,80,255);
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+    font-size: 20px;
+}
+
+.redesociais a i:hover{
+    transition: 00.4s all;
+}
+
+.redesociais a:hover > i{
+    transform: scale(1.3) rotate(5deg);
+}
+
+.redesociais a{
+    text-decoration: none;
+}
+
+#fontelogo {
+	float: left;
+	width: 300px;
+	height: 100px;
+	margin-left: 65px;
+}
+
+.rodape {
+	text-align: center;
+	font-family: "Orkney";
+	font-size: 11px;
+	padding: 12px 15px;
+	color: white;
+	background-color: rgba(34,34,34,255);
+	top: 100%;
+	bottom: 0;
+	width: 100%;
+	height: 2.5rem;
+	position: 0;
+}
+
+#fotos_do_lado{
+	display: flex;
+	justify-content: center;
+}
+
+.valores_enfeite{
+	border: 10px solid rgb(255, 255, 255);
+	box-shadow: 5px 5px 0 #0006;
+	flex-grow: 1;
+	animation: neon 3s alternate infinite ease-in-out;
+	color: #e89098;
+}
+
+.botao_receita{
+	font-family: "Jost";
+	padding: 15px 8px;
+	width: 50px;
+	color: #ffffff;
+	background-color: #e89098;
+	border-radius: 10px;
+}
+
+.botao_receita:hover{
+	box-shadow: 5px 5px 0 rgba(34,34,34,255);
+	transition: 0.4s ease-in-out;
+}
+
+#alinhando_botao_receita{
+	text-align: center;
+	padding-left: 520px;
+}
+
+#inline{
+	display: flex;
+	justify-content: space-around;
+}
+
+#alinhando_segundo_botao_receita{
+	text-align: center;
+	padding-right: 570px;
+}
+
+#chantilly{
+	border: 10px solid rgb(255, 255, 255);
+	box-shadow: 5px 5px 5px #0006;
+	flex-grow: 1;
+	animation: neon 3s alternate infinite ease-in-out;
+	color: #e89098;
+}
+
+#casal{
+	border: 10px solid rgb(255, 255, 255);
+	box-shadow: 5px 5px 5px #0006;
+	flex-grow: 1;
+	animation: neon 3s alternate infinite ease-in-out;
+	color: #e89098;
+}
+
+@keyframes neon {
+	from {
+		filter: drop-shadow(2px 5px 10px);
+	}
+	to{
+		filter: drop-shadow(0 10px 30px);
+	}
+}
+
+#link{
+	text-decoration: none;
+}
+
+
+@media (max-width: 1220px) { 
+	body {
+		background-color: #fbfefb;
+    }
+	
+	.menu {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+	#fontelogo{
+		display: none;
+	}
+
+	.menu ul li a{
+		border: 1px solid #e89098;
+		border-radius: 10px;
+		color: rgb(104, 104, 104);
+		text-decoration: none;
+		padding: 10px 5px;
+		display: inline-block;
+		transition: 0.5s ease-in-out;
+		font-family: "BebasNeue";
+		margin: 0;
+		box-sizing: border-box;
+		font-size: 16px;
+		position: relative;
+		width: 95px;
+	}
+
+	.menu ul{
+		text-align: center;
+		list-style: none;
+		padding: 0;
+		background-color: rgba(233, 233, 233, 0.974);
+		width: 100%;
+	}
+	
+	.menu ul li{
+		display: inline;
+		margin-right: 0;
+	}
+	
+	a{
+		text-align: center;
+	}
+
+	h1{
+		text-align: left;
+		margin: 25%;
+		margin-bottom: 0;
+		color: rgba(245,136,121,255);
+		text-shadow: 2px 0px 10px #ff7a60;
+		font-size: 221%;
+		width: 400px;
+	}
+	
+	h2{
+		text-align: left;
+		margin: 2%;
+		margin-bottom: 0;
+		color: rgba(245,136,121,255);
+		text-shadow: 5px 0px 10px #ff7a60;
+		font-size: 180%;
+		width: 400px;
+	}
+
+	.banner{
+        display: none;
+    }
+	
+	.main {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+	.main_video{
+		display: none;
+	} 
+
+	.main2 {
+        flex-wrap: wrap;
+        justify-content: center;
+        height: auto;
+        gap: 30px;
+    }
+
+	.main img {
+        max-width: 100%;
+    }
+
+	.menu, .redesociais{
+		grid-auto-flow: row;
+		justify-content: center;
+	}
+}
+
+@media print {
+	.menu{
+		display: none;
+	}
+}
+
+@media (max-width: 500px) {
+    header .menu {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    #fontelogo{
+		display: none;
+	}
+}
